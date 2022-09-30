@@ -1,0 +1,88 @@
+<!--Form-->
+<div class="d-flex flex-row justify-content-center">
+    <div class="row">
+        <div class="col-md">
+            <form [formGroup]="sellerform" (ngSubmit)="sellerdata(sellerform.value)">
+                <div class="sign-in">Sign In</div>
+                <div class="form-group">
+                    <label id="words_1" for="exampleInputEmail1">Full Name</label>
+                    <input type="text" class="form-control" id="fullname" aria-describedby="fullname"
+                        placeholder="Full Name" formControlName="name">
+                    <div *ngIf="sellerform.controls['name'].invalid && sellerform.controls['name'].touched"
+                        class="text-danger">
+                        <div *ngIf="sellerform.controls['name'].errors.required">
+                            Name is required.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label id="words_1" for="exampleInputEmail1">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter email" formControlName="email">
+                    <div *ngIf="sellerform.controls['email'].invalid && sellerform.controls['email'].touched"
+                        class="text-danger">
+                        <div *ngIf="sellerform.controls['email'].errors.required">
+                            Email is required.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label id="words_1" for="exampleInputgender">Gender</label><br>
+                    <mat-radio-group aria-label="Select an option">
+                        <mat-radio-button value="Male">Male</mat-radio-button>
+                        <mat-radio-button value="Female">Female
+                        </mat-radio-button>
+                    </mat-radio-group>
+                </div>
+
+                <div class="form-group">
+                    <label id="words_1" for="exampleInputEmail1">Phone Number</label>
+                    <input type="number" class="form-control" id="exampleInputphone" aria-describedby="phone_no"
+                        placeholder="Phone Number" formControlName="phone_no">
+                    <div *ngIf="sellerform.controls['phone_no'].invalid && sellerform.controls['phone_no'].touched"
+                        class="text-danger">
+                        <div *ngIf="sellerform.controls['phone_no'].errors.required">
+                            Name is required.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label id="words_1" for="exampleInputPassword1">Password </label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"
+                        formControlName="Password">
+                    <div *ngIf="sellerform.controls['Password'].invalid && sellerform.controls['Password'].touched"
+                        class="text-danger">
+                        <div *ngIf="sellerform.controls['Password'].errors.required">
+                            Name is required.
+                        </div>
+                    </div>
+                    <label id="words_2" for="exampleInputPassword1">Confirm Password </label>
+                    <input type="password" class="form-control" id="exampleInputconfirmPassword1"
+                        placeholder="Confirm Password" formControlName="confirm_password">
+                    <div *ngIf="sellerform.controls['confirm_password'].invalid && sellerform.controls['confirm_password'].touched"
+                        class="text-danger">
+                        <div *ngIf="sellerform.controls['confirm_password'].errors.required">
+                            Name is required.
+                        </div>
+                        <div *ngIf="passwordMatchError">
+                            Password does not match
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-warning" id="sign-in">Sign In</button>
+                        <!-- <div class="form-group">
+                            <input type="checkbox" class="form-check-input checkbox" id="exampleCheck1">
+                            <p class="keep-sign-in">Keep me signed in. <a href="https://stupidlink.com">Details</a></p>
+                        </div> -->
+                    </div>
+                </div>
+                <button type="button" class="btn btn-warning" id="grey-button">Create your Amazon account</button>
+
+            </form>
+        </div>
+        <!--Col 1 End-->
+    </div>
+    <!--Row 1 End-->
+</div>
+<!--Container End-->
+<!--Form-->

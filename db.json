@@ -1,0 +1,44 @@
+{
+  "seller": [
+    {
+      "fullname": "neerajnaithani",
+      "email": "neerajnaithani@gmail.com",
+      "gender": "male",
+      "phone_no.": 7700077551,
+      "password": "3456",
+      "id": 1
+    },
+    {
+      "fullname": "neerajnaithani",
+      "email": "neerajnaithani@gmail.com",
+      "gender": "male",
+      "phone_no.": 7700077551,
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "name": "Tatyana Pittman",
+      "email": "neleti@mailinator.com",
+      "phone_no": 50,
+      "Password": "Pa$$w0rd!",
+      "confirm_password": "Pa$$w0rd!",
+      "id": 3
+    },
+    {
+      "name": "Vincent Drake",
+      "email": "gihasurofa@mailinator.com",
+      "phone_no": 50,
+      "Password": "Pa$$w0rd!",
+      "confirm_password": "Pa$$w0rd!",
+      "id": 4
+    },
+    {
+      "name": "Felix Holmes",
+      "email": "gomegusevi@mailinator.com",
+      "phone_no": 60,
+      "Password": "Pa$$w0rd!",
+      "confirm_password": "Pa$$w0rd!",
+      "id": 5
+    }
+  ]
+}
